@@ -84,8 +84,47 @@
       <div class="age_result" id="age_result"></div>
     </div>
 
+    <!-- mariage status -->
+    <div class="container">
+      <form id="mariage_form " class="form mariage_form">
+        <h2>Mariage Status</h2>
+        <div class="form-control">
+          <label for="candidate">Name</label>
+          <input type="text" id="candidate" placeholder="Enter Your Name" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="year">Birth Year</label>
+          <input type="number" id="year" placeholder="Enter Birth Year" />
+          <small>Error message</small>
+        </div>
+        <div class="radio" id="radio">
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            id="male"
+            class="male"
+          />
+          Male
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            id="female"
+            class="female"
+          />
+          Female
+        </div>
+        <button type="submit" id="mariage_button">Check</button>
+      </form>
+      <div class="age_result" id="mariage_result"></div>
+    </div>
+
     <script src="./app.js"></script>
     <script src="./currency.js"></script>
     <script src="./ageCal.js"></script>
+    <script src="./mariage.js"></script>
   </body>
 </html>

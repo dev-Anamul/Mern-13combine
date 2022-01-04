@@ -116,6 +116,10 @@ h2 {
   width: 100%;
 }
 
+.radio {
+  text-align: center;
+}
+
 .age_result p {
   text-align: center;
   padding: 15px 10px;
