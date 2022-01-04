@@ -36,7 +36,11 @@ year.addEventListener('blur', (e) => {
 });
 marriageBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    mariageResult.innerHTML = mariageStatus();
+    mariageResult.innerHTML = '';
+    checkRequired([candidate, year]);
+    if (candidate.value && year.value) {
+        mariageResult.innerHTML = mariageStatus();
+    }
     candidate.value = '';
     year.value = '';
 });
