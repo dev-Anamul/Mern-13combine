@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="validate_form" class="form">
+        <h2>Form Validation</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- currecy converter -->
+    <div class="container currency-container" id="currency-container">
+      <form id="currency-convert-form" class="form currency-convert-form">
+        <h2>Currency Converter</h2>
+        <div class="form-control currency">
+          <select id="currency-from" class="currency-from">
+            <option value="0">--Select--</option>
+            <option value="pound">Pound</option>
+            <option value="CAD">CAD</option>
+            <option value="USD">USD</option>
+            <option value="EURO">EURO</option>
+          </select>
+          <input type="number" class="amount-from" id="amount-from" value="1" />
+        </div>
+        <h2 class="show__result"></h2>
+        <div class="form-control currency">
+          <select id="currency-to" class="currency-to">
+            <option value="BDT">BDT</option>
+          </select>
+          <input type="number" class="amount-to" id="amount-to" value="0" />
+        </div>
+        <button type="submit" id="currency-btn">Check</button>
+      </form>
+    </div>
+
+    <!-- age calculator -->
+    <div class="container">
+      <form id="age_form " class="form age_form">
+        <h2>Calculate Your age</h2>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="birthyear">Birthyear</label>
+          <input type="number" id="birthyear" placeholder="Enter Birthyear" />
+          <small>Error message</small>
+        </div>
+        <button type="submit" id="age_button">Check</button>
+      </form>
+      <div class="age_result" id="age_result"></div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./currency.js"></script>
+    <script src="./ageCal.js"></script>
+  </body>
+</html>
